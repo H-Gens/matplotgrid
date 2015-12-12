@@ -7,6 +7,9 @@ I originally created this tool for use in plotting measurement data, where it ca
 
 This tool will be especially useful for those who work within the Spyder IDE (<https://winpython.github.io/>) and execute scripts via the Spyder console (a MATLAB-like experience).  Additional information is available at <https://h-gens.github.io/creating-a-grid-of-matplotlib-figures.html>.  
 
+<img src="https://h-gens.github.io/images/2015-12-13-matplotgrid/example1.png" />
+
+
 
 Installation  
 -------------
@@ -44,9 +47,3 @@ Example 2 - create four figures, numbered 9, 10, 11, 12.
 	gc.create([9, 10, 11, 12])  
 
 The figures will appear automatically if using interactive mode (matplotlib.pyplot.ion() or matplotlib.interactive(True)).  Otherwise, matplotlib.pyplot.show() will need to be called (my startup script for Spyder is spyderlib\scientific_startup.py, which turns interactive mode on automatically).  See GridCreator.create()'s docstring for advanced options.  
-
-
-Result  
--------------  
-
-Screenshot from Example 1.  

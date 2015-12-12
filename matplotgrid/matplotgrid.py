@@ -11,7 +11,8 @@ from screeninfo import get_monitors
 
 class GridCreator(object):
     """
-    Defines a class that creates a grid of matplotlib figures.
+    Defines a class that creates a grid of matplotlib figures.  See
+    docstring of GridCreator.__init__() for argument descriptions.
     """
 
     def __init__(self, rows=3, cols=6, monitor_start=0, prop={}):
