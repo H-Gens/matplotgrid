@@ -20,11 +20,15 @@ To install,
 
 1.  Clone this directory  
 
-    git clone URLGOESHERE  
+    git clone https://github.com/H-Gens/matplotgrid.git  
 
 2.  Install into your distribution's site-packages directory (this also installs screeninfo)  
 
     python setup.py install  
+
+To uninstall,
+
+	pip uninstall matplotgrid  
 
 
 Usage  
