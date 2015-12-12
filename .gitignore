@@ -10,6 +10,7 @@ __pycache__/
 env/
 build/
 develop-eggs/
+# Setuptools distribution folder.
 dist/
 downloads/
 eggs/
@@ -19,9 +20,10 @@ lib64/
 parts/
 sdist/
 var/
+# Python egg metadata, regenerated from source files by setuptools.
 *.egg-info/
-.installed.cfg
 *.egg
+.installed.cfg
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -55,3 +57,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# development-related
+nocommit/

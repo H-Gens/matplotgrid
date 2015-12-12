@@ -15,11 +15,11 @@ There is one dependency (<https://github.com/rr-/screeninfo>) that gets installe
 
 To install,  
 
-1.  Clone this directory  
+1.  Clone this directory::  
 
     git clone URLGOESHERE  
 
-2.  Install into your distribution's site-packages directory (this also installs screeninfo)  
+2.  Install into your distribution's site-packages directory (this also installs screeninfo)::  
 
     python setup.py install  
 
@@ -27,7 +27,7 @@ To install,
 Usage  
 -------------  
 
-Example 1 - create eight figures.  
+Example 1 - create eight figures::  
 
 	from matplotgrid import GridCreator  
 	# Define a grid with 3 rows and 6 columns.  
@@ -44,9 +44,3 @@ Example 2 - create four figures, numbered 9, 10, 11, 12.
 	gc.create([9, 10, 11, 12])  
 
 The figures will appear automatically if using interactive mode (matplotlib.pyplot.ion() or matplotlib.interactive(True)).  Otherwise, matplotlib.pyplot.show() will need to be called (my startup script for Spyder is spyderlib\scientific_startup.py, which turns interactive mode on automatically).  See GridCreator.create()'s docstring for advanced options.  
-
-
-Result  
--------------  
-
-Screenshot from Example 1.  
