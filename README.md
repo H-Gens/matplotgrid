@@ -18,17 +18,30 @@ There is one dependency (<https://github.com/rr-/screeninfo>) that gets installe
 
 To install,  
 
-1.  Clone this directory  
+1.  Clone this directory or download as a zip.  
 
-    git clone https://github.com/H-Gens/matplotgrid.git  
+    `git clone https://github.com/H-Gens/matplotgrid.git`  
 
-2.  Install into your distribution's site-packages directory (this also installs screeninfo)  
+2.  Change into the matplotgrid directory and install into your distribution's site-packages directory (this also installs screeninfo).  
 
-    python setup.py install  
+    `python setup.py install`  
 
-To uninstall,
+To uninstall: `pip uninstall matplotgrid`.  
 
-	pip uninstall matplotgrid  
+
+matplotlib backend  
+-------------  
+
+matplotgrid was written assuming the Qt4Agg backend has been selected.  This is the default if WinPython was installed and one is using Spyder.  Two of the more convenient ways to change your backend are:  
+
+1.  Change the backend in every script.  The first two lines of every script would be:  
+
+	`import matplotlib as mpl`  
+	`mpl.use('Qt4Agg') # or mpl.rcParams['backend'] = 'Qt4Agg' `
+
+2.  Edit the file named "matplotlibrc" and set the backend to Qt4Agg.  A copy of the file can be found in `<python-version>Lib\site-packages\matplotlib\mpl-data\`.  If using WinPython, copy this file to `settings\.matplotlib\`.  
+
+Backends [are described here](http://matplotlib.org/faq/usage_faq.html#what-is-a-backend).  
 
 
 Usage  
